@@ -1,0 +1,25 @@
+[{
+    "name": "mysql",
+    "email": "mysqltesztemail@gmail.com",
+    "age": "45",
+    "scale": "5",
+    "userRecommend": "minden",
+    "prefer": ["tanarikar", "diakkozosseg", "oktatas"],
+    "comment": "mysql koment"
+}, {
+    "name": "Bandus",
+    "email": "banduska11@gmail.com",
+    "age": "52",
+    "scale": "4",
+    "userRecommend": "talan",
+    "prefer": ["diakkozosseg", "golyatabor"],
+    "comment": "Bandus komment"
+}, {
+    "name": "Lacika",
+    "email": "Lacikaemail@gmail.com",
+    "age": "18",
+    "scale": "2",
+    "userRecommend": "eselytelen",
+    "prefer": "golyatabor",
+    "comment": "lacikommment"
+}]

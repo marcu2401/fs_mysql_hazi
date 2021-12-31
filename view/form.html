@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- űrlapos kód beágyazva-->
+
+  <div class="container">
+
+    <header class="header">
+      <h1 id="title" class="text-center">
+        Szikszi értékelés
+      </h1>
+    </header>
+
+    <form id="survey-form" method="POST" action="/formaction">
+      <div class="form-group">
+        <label for="name" id="name-label">Név</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Írd be a neved" required />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Írd be az email címed" required />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number"> Korod <span class="clue"> (Nem kötelező) </span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+      </div>
+
+      <div class="form-group">
+        <p>1-5 skálán hanyasra értékelnéd az intézményt? <span class="clue"> (1-rosz/5-jó) </span></p>
+        <select id="dropdown" name="scale" class="form-control" required>
+          <option disabled selected value>Válassz egy számot</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Ajánlanád az intézményt a barátaidnak?</p>
+        <label> <input name="userRecommend" value="minden" type="radio" class="input-radio" checked />Minden
+          bizonnyal</label>
+        <label> <input name="userRecommend" value="talan" type="radio" class="input-radio" />Talán</label>
+        <label> <input name="userRecommend" value="eselytelen" type="radio" class="input-radio" />Esélytelen</label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          Mi a jó az intézményben?
+          <span class="clue">(Jelöld be őket)</span>
+        </p>
+        <label><input name="prefer" value="tanarikar" type="checkbox" class="input-checkbox" />Tanári kar</label>
+        <label><input name="prefer" value="diakkozosseg" type="checkbox" class="input-checkbox" />Diák közösség</label>
+        <label><input name="prefer" value="programok" type="checkbox" class="input-checkbox" />Programok</label>
+        <label><input name="prefer" value="oktatas" type="checkbox" class="input-checkbox" />Oktatás</label>
+        <label><input name="prefer" value="golyatabor" type="checkbox" class="input-checkbox" />Gólyatábor</label>
+      </div>
+
+      <div class="form-group">
+        <p>További dolgok amik tetszenek neked?</p>
+        <textarea id="comments" class="input-textarea form-control" name="comment"
+          placeholder="Írd le ide őket..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- űrlapos kód beágyazva-->
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
